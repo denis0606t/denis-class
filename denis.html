@@ -1,196 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>denis</title>
- <link rel="icon" type="image/png" href="backgrounds/denis_logo.png">
- <style>
-  body {
-    background-image: url('backgrounds/denis.jpg');
-  }
+  <title>Denis</title>
+  <link rel="icon" type="image/png" href="backgrounds/denis_logo.png">
+  <style>
+    body {
+      background-image: url('backgrounds/denis.jpg');
+      background-size: cover;
+      background-color: black; /* Evita spazi bianchi */
+    }
 
-  @media (min-width: 1px) {
-            body {
-                background-size: cover;
-                background-color: black; /* Aggiungi un colore di sfondo per evitare spazi bianchi */
-            }
-        }
+    .Blackbox {
+      width: 1000px;
+      height: 100px;
+      background-color: rgb(0, 0, 0);
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      position: absolute;
+      top: 6%;
+      left: 27%;
+      transform: translate(-50%, -50%);
+    }
 
-.Blackbox {
-    	width: 1000px;
-    	height: 100px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(0, 0, 0);
-    	border-radius: 20px;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 6%; /* Centrare verticalmente */
-    	left: 27%;
-    	transform: translate(-50%, -50%);
-}
+    .button {
+      color: rgb(255, 255, 255);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 40px;
+      width: 110px;
+      height: 50px;
+      background-color: rgb(0, 0, 0);
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      position: absolute;
+      text-align: center;
+      padding: 5px;
+    }
 
-.Homepage {
-	color: rgb(255, 255, 255);
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-   	width: 200px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-   	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 12%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Homepage {
+      width: 200px;
+      left: 12%;
+    }
 
-.Jean {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-   	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 51%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Jean {
+      left: 51%;
+    }
 
-.Davide {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 64%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Davide {
+      left: 64%;
+    }
 
-.Denis {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 77%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Denis {
+      left: 77%;
+    }
 
-.Diego {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 90%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Diego {
+      left: 90%;
+    }
 
-a{
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-}
+    .button:hover {
+      border: 2px solid rgb(98, 16, 126);
+      background-color: #201f1f;
+      color: rgb(98, 16, 126);
+    }
 
-.Jean:hover {
-    width: 100px;
-    border: 2px solid rgb(98, 16, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
+    a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
 
-.Denis:hover {
-    width: 100px;
-    border: 2px solid rgb(98, 16, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-.Davide:hover {
-    width: 115px;
-    border: 2px solid rgb(98, 16, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
+    a:hover {
+      color: rgb(98, 16, 126);
+    }
 
-.Diego:hover {
-    width: 100px;
-    border: 2px solid rgb(98, 16, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
+    h1 {
+      color: purple;
+      font-family: Roboto, sans-serif;
+    }
 
-  .Homepage:hover {
-    width: 210px;
-    border: 2px solid rgb(98, 16, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-
-a:hover{
-
-    color:rgb(98, 16, 126);
-}
-
+    p {
+      font-size: 1vw;
+      font-family: Roboto, sans-serif;
+    }
   </style>
 </head>
 <body>
   <div class="Blackbox">
-		
-		<div class="Homepage"> <a href="homepage.html"> Homepage </a> </div>
+    <div class="Homepage button"><a href="homepage.html">Homepage</a></div>
+    <div class="Jean button"><a href="jean1.html">Jean</a></div>
+    <div class="Davide button"><a href="davide.html">Davide</a></div>
+    <div class="Denis button"><a href="denis.html">Denis</a></div>
+    <div class="Diego button"><a href="diego.html">Diego</a></div>
+  </div>
 
-		<div class="Jean"><a href="jean1.html">Jean</a></div>
-		
-		<div class="Davide"><a href="davide.html">Davide</a></div>
-
-		<div class="Denis"><a href="denis.html">Denis</a></div>
-
-		<div class="Diego"><a href="diego.html">Diego</a></div>
-
-	</div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-<h1  style="color:purple;" style="font-family:Roboto;">Introducing my self</h1>
-<p style="font-size:1vw;" style="font-family:Roboto;">Hi my name is Denis,i'm 18 and i was born in Oderzo,Italy.</p>
-<p style="font-size:1vw;" style="font-family:Roboto;">I like music and my favourite song is can't tell me nothing by Kanye West</p>
-<audio controls src="music/Cant Tell Me Nothing.mp3"></audio>
+  <h1>Introducing myself</h1>
+  <p>Hi my name is Denis, I'm 18 and I was born in Oderzo, Italy.</p>
+  <p>I like music and my favorite song is "Can't Tell Me Nothing" by Kanye West.</p>
+  <audio controls src="music/Cant Tell Me Nothing.mp3"></audio>
 </body>
 </html>
