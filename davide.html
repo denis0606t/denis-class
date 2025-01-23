@@ -1,197 +1,99 @@
 <!DOCTYPE html>
 <html>
-<title>Davide cool page!</title>
-<link rel="icon" type="image/jpg" href="backgrounds/davide_logo.jpg">
-<style>
+<head>
+  <title>Davide cool page!</title>
+  <link rel="icon" type="image/jpg" href="backgrounds/davide_logo.jpg">
+  <style>
     body {
       background-image: url('backgrounds/davide_sfondo.jpg');
+      background-size: cover;
+      background-color: black;
+      margin: 0;
+      text-align: center; /* Per centrare tutti i contenuti */
+      font-family: Arial, sans-serif;
     }
 
-    @media (min-width: 1px) {
-            body {
-                background-size: cover;
-                background-color: black; /* Aggiungi un colore di sfondo per evitare spazi bianchi */
-            }
-        }
+    .Blackbox {
+      width: 100%;
+      max-width: 1000px;
+      height: 100px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 20px;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
 
-.Blackbox {
-    	width: 1000px;
-    	height: 100px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(0, 0, 0);
-    	border-radius: 20px;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 6%; /* Centrare verticalmente */
-    	left: 27%;
-    	transform: translate(-50%, -50%);
-}
+    .Blackbox div {
+      text-align: center;
+    }
 
-.Homepage {
-	color: rgb(255, 255, 255);
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-   	width: 200px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-   	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 12%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Blackbox div a {
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 18px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
 
-.Jean {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-   	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 51%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Blackbox div a:hover {
+      color: rgb(134, 25, 15);
+      background-color: rgba(32, 31, 31, 0.8);
+      border-color: purple; /* Cambia il bordo in viola */
+      transform: scale(1.05);
+    }
 
-.Davide {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 64%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .content {
+      color: white;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+      max-width: 800px;
+    }
 
-.Denis {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 77%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .content h1 {
+      color: rgb(55, 0, 255);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      font-size: 36px;
+    }
 
-.Diego {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(255, 255, 255);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 90%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .content p {
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+    }
 
-a{
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-}
-
-.Jean:hover {
-    width: 100px;
-    border: 2px solid rgb(16, 33, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-
-.Denis:hover {
-    width: 100px;
-    border: 2px solid rgb(16, 33, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-.Davide:hover {
-    width: 115px;
-    border: 2px solid rgb(16, 33, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-
-.Diego:hover {
-    width: 100px;
-    border: 2px solid rgb(16, 33, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-
-  .Homepage:hover {
-    width: 210px;
-    border: 2px solid rgb(16, 33, 126);
-    background-color: #201f1f;
-    transition: all 0.3s ease;
-  }
-
-a:hover{
-
-    color:rgb(16, 33, 126);
-}
-
-
-</style>
-
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
 </head>
 <body>
+  <!-- Blackbox Menu -->
+  <div class="Blackbox">
+    <div class="Homepage"><a href="homepage.html">Homepage</a></div>
+    <div class="Jean"><a href="jean1.html">Jean</a></div>
+    <div class="Davide"><a href="davide.html">Davide</a></div>
+    <div class="Denis"><a href="denis.html">Denis</a></div>
+    <div class="Diego"><a href="diego.html">Diego</a></div>
+  </div>
 
-    <div class="Blackbox">
-		
-		<div class="Homepage"><a href="homepage.html">Homepage</a></div>
-
-		<div class="Jean"><a href="jean1.html">Jean</a></div>
-		
-		<div class="Davide"><a href="davide.html">Davide</a></div>
-
-		<div class="Denis"><a href="denis.html">Denis</a></div>
-
-		<div class="Diego"><a href="diego.html">Diego</a></div>
-
-	</div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<h1 style="color:rgb(55, 0, 255);">Introducing myself</h1>
-<p style="color:white;"style="font-family:Times New Roman;" style="color:rgb(255, 255, 255);">hi, i'm davide lovisotto, i'm 18 and i live in roveredo in piano.</p>
-<p style="color:white;" style="font-family:Times New Roman;" style="color:rgb(255, 255, 255);">I like to play sport and my favourite song is this one.</p>
-<audio controls src="music/no idea - don toliver.mp3"></audio>
+  <div class="content">
+    <h1>Introducing Myself</h1>
+    <p>Hi, I'm Davide Lovisotto, I'm 18 and I live in Roveredo in Piano.</p>
+    <p>I like to play sports, and my favourite song is this one:</p>
+    <audio controls src="music/no idea - don toliver.mp3"></audio>
+  </div>
 </body>
 </html>
