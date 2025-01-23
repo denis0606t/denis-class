@@ -7,7 +7,8 @@
     body {
       background-image: url('backgrounds/denis.jpg');
       background-size: cover;
-      background-color: black; /* Evita spazi bianchi */
+      background-color: black; /* Colore di sfondo per evitare spazi vuoti */
+      margin: 0;
     }
 
     .Blackbox {
@@ -18,7 +19,7 @@
       border-radius: 20px;
       position: absolute;
       top: 6%;
-      left: 27%;
+      left: 50%;
       transform: translate(-50%, -50%);
     }
 
@@ -32,71 +33,56 @@
       border: 2px solid rgb(255, 255, 255);
       border-radius: 20px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-      position: absolute;
       text-align: center;
-      padding: 5px;
-    }
-
-    .Homepage {
-      width: 200px;
-      left: 12%;
-    }
-
-    .Jean {
-      left: 51%;
-    }
-
-    .Davide {
-      left: 64%;
-    }
-
-    .Denis {
-      left: 77%;
-    }
-
-    .Diego {
-      left: 90%;
+      line-height: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
     }
 
     .button:hover {
-      border: 2px solid rgb(98, 16, 126);
+      border-color: rgb(98, 16, 126);
       background-color: #201f1f;
       color: rgb(98, 16, 126);
     }
 
-    a {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: rgb(98, 16, 126);
+    .Homepage {
+      width: 200px;
     }
 
     h1 {
       color: purple;
+      text-align: center;
+      margin-top: 150px;
       font-family: Roboto, sans-serif;
     }
 
     p {
-      font-size: 1vw;
+      text-align: center;
+      font-size: 1.2rem;
+      color: white;
+      margin: 10px 20px;
       font-family: Roboto, sans-serif;
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
     }
   </style>
 </head>
 <body>
   <div class="Blackbox">
-    <div class="Homepage button"><a href="homepage.html">Homepage</a></div>
-    <div class="Jean button"><a href="jean1.html">Jean</a></div>
-    <div class="Davide button"><a href="davide.html">Davide</a></div>
-    <div class="Denis button"><a href="denis.html">Denis</a></div>
-    <div class="Diego button"><a href="diego.html">Diego</a></div>
+    <a href="homepage.html" class="button Homepage">Homepage</a>
+    <a href="jean1.html" class="button">Jean</a>
+    <a href="davide.html" class="button">Davide</a>
+    <a href="denis.html" class="button">Denis</a>
+    <a href="diego.html" class="button">Diego</a>
   </div>
 
-  <h1>Introducing myself</h1>
-  <p>Hi my name is Denis, I'm 18 and I was born in Oderzo, Italy.</p>
-  <p>I like music and my favorite song is "Can't Tell Me Nothing" by Kanye West.</p>
+  <h1>Introducing Myself</h1>
+  <p>Hi, my name is Denis. I'm 18 and I was born in Oderzo, Italy.</p>
+  <p>I like music, and my favourite song is "Can't Tell Me Nothing" by Kanye West.</p>
   <audio controls src="music/Cant Tell Me Nothing.mp3"></audio>
 </body>
 </html>
