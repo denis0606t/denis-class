@@ -20,175 +20,101 @@ body{
             }
         }
 
-.Blackbox {
-    	width: 1000px;
-    	height: 100px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(0, 0, 0);
-    	border-radius: 20px;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 6%; /* Centrare verticalmente */
-    	left: 27%;
-    	transform: translate(-50%, -50%);
-}
+ .Blackbox {
+        width: 100%;
+        max-width: 1000px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.8); /* Trasparenza per un effetto moderno */
+        border-radius: 20px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
 
-.Homepage {
-	color: rgb(203, 172, 157);
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-   	width: 200px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(203, 172, 157);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-   	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 12%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Blackbox div {
+        text-align: center;
+    }
 
-.Jean {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(203, 172, 157);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-   	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 51%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Blackbox div a {
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 18px;
+        width: 100%;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
 
-.Davide {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(203, 172, 157);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 64%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    .Blackbox div a:hover {
+        color: rgb(134, 25, 15);
+        background-color: rgba(32, 31, 31, 0.8);
+        border-color: rgb(134, 25, 15);
+        transform: scale(1.05);
+    }
 
-.Denis {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(203, 172, 157);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 77%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    h1 {
+        color: red;
+        text-align: center;
+        margin-top: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
 
-.Diego {
-	
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 40px;
-    	width: 110px;
-    	height: 50px;
-    	background-color: rgb(0, 0, 0);
-    	border: 2px solid rgb(203, 172, 157);
-    	border-radius: 20px;
-    	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-    	transition: all 0.3s ease;
-	position: absolute; /* Posizionamento relativo al box contenitore */
-    	top: 50%; /* Centrare verticalmente */
-    	left: 90%;
-    	transform: translate(-50%, -50%);
-	text-align:center;
-	padding: 5px;
-}
+    h3 {
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+    }
 
-a{
-	color: rgb(203, 172, 157);
-	text-decoration: none;
-}
+    p {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 10px auto;
+    }
 
-.Jean:hover {
-    width: 100px;
-    border: 2px solid rgb(21, 87, 19);
-    background-color: #201f1f;
-	box-shadow: 0 0 10px rgb(21, 87, 19);
-    transition: all 0.3s ease;
-  }
+    audio {
+        display: block;
+        margin: 20px auto;
+    }
 
-.Denis:hover {
-    width: 100px;
-    border: 2px solid rgb(21, 87, 19);
-    background-color: #201f1f;
-	box-shadow: 0 0 10px rgb(21, 87, 19);
-    transition: all 0.3s ease;
-  }
-.Davide:hover {
-    width: 115px;
-    border: 2px solid rgb(21, 87, 19);
-    background-color: #201f1f;
-	box-shadow: 0 0 10px rgb(21, 87, 19);
-    transition: all 0.3s ease;
-  }
+    @media (max-width: 768px) {
+        .Blackbox {
+            flex-direction: column;
+            height: auto;
+            padding: 15px;
+        }
 
-.Diego:hover {
-    width: 100px;
-    border: 2px solid rgb(21, 87, 19);
-    background-color: #201f1f;
-	box-shadow: 0 0 10px rgb(21, 87, 19);
-    transition: all 0.3s ease;
-  }
+        .Blackbox div a {
+            margin: 5px 0;
+        }
 
-a:hover{
+        p {
+            font-size: 16px;
+        }
 
-    color:rgb(21, 87, 19);
-	text-shadow: 0 0 10px rgb(21, 87, 19);
-}
-
+        h1 {
+            font-size: 24px;
+        }
+    }
 </style>
-<link rel="icon" type="image/png" href="backgrounds/homepage_logo.png">
 </head>
-
 <body>
-
-	<div class="Blackbox">
-		
-		<div class="Homepage">Homepage</div>
-
-		<div class="Jean"><a href="jean1.html">Jean</a></div>
-		
-		<div class="Davide"><a href="davide.html">Davide</a></div>
-
-		<div class="Denis"><a href="denis.html">Denis</a></div>
-
-		<div class="Diego"><a href="diego.html">Diego</a></div>
-
-	</div>
-
+    <div class="Blackbox">
+        <div class="Homepage"><a href="homepage.html">Homepage</a></div>
+        <div class="Jean"><a href="jean1.html">Jean</a></div>
+        <div class="Davide"><a href="davide.html">Davide</a></div>
+        <div class="Denis"><a href="denis.html">Denis</a></div>
+        <div class="Diego"><a href="diego.html">Diego</a></div>
+    </div>
 
 </body>
 </html>
