@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Year New Me</title>
-    <link rel="icon" type="image/jpeg" href="backgrounds/jean_logo.jpg">
-    <link rel="stylesheet" href="style/style.css">
-    <style>
-        body {
-            background-image: url('backgrounds/Jean_Background.jpg');
-            background-size: cover;
-            background-color: black; /* Fallback per gli spazi */
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            box-sizing: border-box; /* Inclusione di margini e bordi nel calcolo della larghezza */
-        }
+  <title>Denis</title>
+  <link rel="icon" type="image/png" href="backgrounds/denis_logo.png">
+  <style>
+    body {
+      background-image: url('backgrounds/denis.jpg');
+      background-size: cover;
+      background-color: black; /* Colore di sfondo per evitare spazi vuoti */
+      margin: 0;
+      text-align: center; /* Centro tutto il contenuto */
+    }
 
-        /* Blackbox */
-        .Blackbox {
+   .Blackbox {
             width: 100%;
-            max-width: 1000px; /* Imposta una larghezza massima */
+            max-width: 1000px;
             height: 100px;
             background-color: rgba(0, 0, 0, 0.8); /* Trasparenza per un effetto moderno */
             border-radius: 20px;
@@ -28,13 +24,10 @@
             justify-content: space-around;
             padding: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            flex-wrap: wrap; /* Per permettere la disposizione su più righe in caso di schermi piccoli */
         }
 
         .Blackbox div {
             text-align: center;
-            flex: 1 1 auto; /* Consente di ridimensionare i link in modo flessibile */
-            margin: 5px; /* Margine tra gli elementi */
         }
 
         .Blackbox div a {
@@ -51,71 +44,51 @@
             text-decoration: none;
         }
 
-        /* Modifica l'effetto hover con una tonalità più chiara per la scritta */
         .Blackbox div a:hover {
-            color: #f0f0f0; /* Colore più chiaro della scritta */
+            color: rgb(134, 25, 15);
             background-color: rgba(32, 31, 31, 0.8);
-            border-color: rgb(134, 25, 15);
+            border-color: purple; /* Cambia il bordo in viola */
             transform: scale(1.05);
         }
 
-        h1, h2 {
-            color: white;
+        .content {
             text-align: center;
-        }
-
-        h1 {
-            margin-top: 50px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        h2 {
-            margin-top: 20px;
-            font-size: 1.5em;
-        }
-
-        p {
             color: white;
-            text-align: center;
-            font-size: 18px;
-            line-height: 1.6;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
             max-width: 800px;
-            margin: 10px auto;
+        }
+
+        .content h1 {
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .content h2 {
+            color: white;
+            margin-top: 20px;
+        }
+
+        .content h2 a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .content h2 a:hover {
+            text-decoration: underline;
         }
 
         audio {
             display: block;
             margin: 20px auto;
         }
-
-        @media (max-width: 768px) {
-            .Blackbox {
-                flex-direction: column; /* Cambia la disposizione in colonna per schermi piccoli */
-                height: auto;
-                padding: 15px;
-            }
-
-            .Blackbox div a {
-                margin: 5px 0;
-                width: auto; /* I link si adattano meglio alla larghezza disponibile */
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-
-            p {
-                font-size: 16px;
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Barra di navigazione Blackbox -->
+    <!-- Blackbox Menu -->
     <div class="Blackbox">
         <div class="Homepage"><a href="homepage.html">Homepage</a></div>
         <div class="Jean"><a href="jean1.html">Jean</a></div>
@@ -124,15 +97,11 @@
         <div class="Diego"><a href="diego.html">Diego</a></div>
     </div>
 
-    <!-- Sezione Contenuto -->
-    <h1>Ciao a tutti!</h1>
-    <hr>
-    <h2>Mi chiamo Jean e buon anno nuovo 🥳</h2>
-    <h2>Mi piace la musica e il mio artista preferito è Kanye West</h2>
-
-    <audio controls src="music/Bully.mp3"></audio>
-
-    <h2>Se vuoi vedere la mia playlist <a href="jean2.html" target="_self" title="Questo ti porta alla mia playlist">Clicca qui</a></h2>
-
+    <div class="content">
+        <h1>Introducing Myself</h1>
+        <p>Hi, my name is Denis. I'm 18 and I was born in Oderzo, Italy.</p>
+        <p>I like music, and my favourite song is "Can't Tell Me Nothing" by Kanye West.</p>
+        <audio controls src="music/Cant Tell Me Nothing.mp3"></audio>
+    </div>
 </body>
 </html>
