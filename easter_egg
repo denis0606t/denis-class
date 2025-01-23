@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black; /* Sfondo scuro per contrastare l'immagine */
+            height: 100vh; /* Altezza full screen */
+        }
 
+        img {
+            max-width: 80%;
+            max-height: 80%;
+            border: 5px solid white; /* Bordo bianco per estetica */
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5); /* Effetto ombra */
+        }
+    </style>
+</head>
+<body>
+    <img src="backgrounds/thugga.jpg" alt="Easter Egg">
+</body>
+</html>
