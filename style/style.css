@@ -117,3 +117,42 @@ a{
 color: rgb(255, 255, 255);
 text-decoration: none;
 }
+
+.Jean:hover {
+    width: 100px;
+    border: 2px solid rgb(0, 242, 255);
+    background-color: #201f1f;
+    transition: all 0.3s ease;
+  }
+
+.Denis:hover {
+    width: 100px;
+    border: 2px solid rgb(0, 242, 255);
+    background-color: #201f1f;
+    transition: all 0.3s ease;
+  }
+.Davide:hover {
+    width: 115px;
+    border: 2px solid rgb(0, 242, 255);
+    background-color: #201f1f;
+    transition: all 0.3s ease;
+  }
+
+.Diego:hover {
+    width: 100px;
+    border: 2px solid rgb(0, 242, 255);
+    background-color: #201f1f;
+    transition: all 0.3s ease;
+  }
+
+  .Homepage:hover {
+    width: 210px;
+    border: 2px solid rgb(0, 242, 255);
+    background-color: #201f1f;
+    transition: all 0.3s ease;
+  }
+
+a:hover{
+
+    color:rgb(0, 242, 255);
+}
