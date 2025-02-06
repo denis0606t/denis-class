@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso dei CSS</title>
+</head>
+<body>
+    <h1 id="css_esterni_interni">CSS esterni e interni</h1>
+    <p>È esterno un foglio di stile definito in un file separato dal documento. Si tratta di semplici documenti di testo editabili anche con il Blocco Note o TextEdit ai quali si assegna l'estensione .css.</p>
+    <p>Un foglio di stile si dice invece interno quando il suo codice è compreso in quello del documento...</p>
+    <a href="Introduzione_CSS.html">Torna all'indice</a>
+
+    <h2 id="fogli_collegati">Fogli collegati (esterni)</h2>
+    <p>Per caricare un foglio esterno in un documento esistono due possibilità.</p>
+
+    <h3 id="link">Usare l'elemento LINK</h3>
+    <p>La prima e più compatibile è quella che fa uso dell'elemento &lt;LINK&gt;. La dichiarazione va sempre collocata all'interno della sezione &lt;HEAD&gt; del documento (X)HTML:</p>
+    <pre>
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Inserire i fogli di stile in un documento&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="stile.css"&gt;
+      &lt;/head&gt;
+    &lt;body&gt;...
+    </pre>
+    <a href="Introduzione_CSS.html">Torna all'indice</a>
+
+    <h3 id="import">Usare @import</h3>
+    <p>Un altro modo per caricare CSS esterni è usare la direttiva @import all'interno dell'elemento &lt;STYLE&gt;:</p>
+    <pre>
+    &lt;style&gt;
+      @import url(stile.css);
+    &lt;/style&gt;
+    </pre>
+    <a href="Introduzione_CSS.html">Torna all'indice</a>
+
+    <h2 id="fogli_incorporati">Fogli incorporati</h2>
+    <p>I fogli incorporati sono quelli inseriti direttamente nel documento (X)HTML tramite l'elemento &lt;STYLE&gt;. Anche in questo caso la dichiarazione va posta all'interno della sezione &lt;HEAD&gt;:</p>
+    <pre>
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Inserire i fogli di stile in un documento&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+          body {
+            background: #FFFFCC;
+          }
+        &lt;/style&gt;
+      &lt;/head&gt;
+    &lt;body&gt;...
+    </pre>
+    <a href="Introduzione_CSS.html">Torna all'indice</a>
+
+    <h2 id="fogli_in_linea">Fogli in linea</h2>
+    <p>L'ultimo modo per formattare un elemento con un foglio di stile consiste nell'uso dell'attributo style. Esso fa parte della collezione di attributi (X)HTML definiti Common...</p>
+    <pre>
+    &lt;h1 style="color: red; background: black;"&gt;Esempio di stile in linea&lt;/h1&gt;
+    </pre>
+    <a href="Introduzione_CSS.html">Torna all'indice</a>
+</body>
+</html>
